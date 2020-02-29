@@ -1,152 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Shikara Technologies</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
-
-<!--
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> 
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Web Development Requirements</a>
-     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> 
-  </div>
--->
-  <!-- Navbar on small screens -->
-  <!--<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-     <a href="#" class="w3-bar-item w3-button w3-padding-large">Web Development Requirements</a>
-     <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>  
-  </div>
-</div>-->
-
-<!-- Header -->
-<img src="logo.jpg" alt="Smiley face" height="150" width="200">
-
-<header class="w3-container w3-red w3-center" style="padding:128px 16px;">
-
-  <h1 class="w3-margin w3-jumbo" >Shikara </h1>
-  <h5 class="w3-margin w3-jumbo" >Technologies </h5>
-
-  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>About the Company</h1>
-      <h5 class="w3-padding-32">Founded in 2020, Shikara Technologies is an Indian based Software Development Company
-        located at Mysuru, the heritage city in Karnataka.
-        We specialized in Software Development, Web Application, Mobile Application Development,
-        Website Designing, Data Analytics, AI Services.</h5>
-
-      <p class="w3-text-grey">Vision : We believe that by our constant innovation and commitment we can deliver best quality services. With our well organised teamwork not only we aim to reach the highest peak but beyond that.</p>
-    </div>
-
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Our Services</h1>
-      <h5 class="w3-padding-32">1.Web Development</h5>
-
-      <p class="w3-text-grey">Professional web development services provider offering custom design, WordPress
-        development, corporate branding, consultation and deployment of the website with Search
-        engine optimization.</p>
-
-        <a href="requirements.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Click here for Web Development Requirements</a>
-
-
-          <h5 class="w3-padding-32">2.Android Development</h5>
-
-          <p class="w3-text-grey">We offer mobile app development services tailored to your business needs, including
-            enterprise-grade mobile apps for iOS and Android.</p>
-
-
+  <head>
+    <title>Shikara Technologies - We build products for Business and People</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-            <h5 class="w3-padding-32">3.Software Development</h5>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-      <p class="w3-text-grey">We design the Software at high and low Level Programming.
-        Structured programming with standardized coding methods and version control system. Testing.
-        Automated testing and bug triaging process to ensure the product delivery meets industry
-        standard. Delivery & Maintenance.</p>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-        <h5 class="w3-padding-32">4.Business Analytics</h5>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-      <p class="w3-text-grey">We provide structured/unstructured data management solutions using AI,enabling businesses to
-        recognize the value inherent in their data thereby knowing the actual need of the customer.</p>
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-        <h5 class="w3-padding-32">5.API Design</h5>
+    <link rel="stylesheet" href="css/aos.css">
 
-        <p class="w3-text-grey">We design Web and System API's to connect share enterprise services and data and help
-            create modern, cloud-based applications and experiences for businesses.</p>
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
   </div>
-</div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: Aim for the Top</h1>
-</div>
+  <div class="site-wrap"  id="home-section">
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <!-- <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div> -->
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+   
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-md-3 col-xl-4  d-block">
+            <!-- <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Shikara Technologies<span class="text-primary">.</span> </a></h1> -->
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Shikara Technologies</a></h1>
 
-</body>
+          </div>
+
+          <div class="col-12 col-md-9 col-xl-8 main-menu">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#features-section" class="nav-link">Services</a></li>
+                <li><a href="#our-team-section" class="nav-link">About Us</a></li>
+                <!-- <li class="has-children">
+                  <a href="#about-section" class="nav-link">About Us</a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#" target="_blank" class="nav-link"><span class="text-primary">More Free Templates</span></a></li>
+                    <li><a href="#our-team-section" class="nav-link">Our Team</a></li>
+                    <li class="has-children">
+                      <a href="#">More Links</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li> -->
+                <!-- <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog</a></li> -->
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0" ><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+    
+
+    <div class="site-blocks-cover" style="overflow: hidden;">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-12" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
+            
+            <img src="images/undraw_investing_7u74.svg" alt="Image" class="img-fluid img-absolute">
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-6 mr-auto">
+                <h1>Make Your Business More Profitable</h1>
+                <p class="mb-5">We at Shikara Technologies build simple and powerful products for people and businesses.</p>
+                <div>
+                  <a href="#contact-section" class="btn btn-primary mr-2 mb-2">Get Started</a>
+                </div>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+    <div class="site-section" id="features-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center text-center"  data-aos="fade-up">
+          <div class="col-7 text-center  mb-5">
+            <h2 class="section-title">Our Services</h2>
+            <p class="lead">We Specialize in Web Application Development, Android Development, Website Designing, Data Analytics, AI Services and API.</p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-autorenew"></span></span>
+              </div>
+              <div>
+                <h3>Market Analysis</h3>
+                <p>We provide data management solutions enabling businesses to recognize the actual need of the customer.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-store_mall_directory"></span></span>
+              </div>
+              <div>
+                <h3>Web Development</h3>
+                <p>Professional Services offering custom design deployment of the website with Search engine optimization.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up"  data-aos-delay="200">
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-shopping_basket"></span></span>
+              </div>
+              <div>
+                <h3>Android Development</h3>
+                <p>Our App development tailored to your business needs, including enterprise-grade mobile apps for iOS and Android.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-settings_backup_restore"></span></span>
+              </div>
+              <div>
+                <h3>API Design</h3>
+                <p>Web and System API's to connect enterprise services to people and cloud-based applications for businesses.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-sentiment_satisfied"></span></span>
+              </div>
+              <div>
+                <h3>Software Development</h3>
+                <p>Structured programming Development with Version Controls & Automated testing, Delivery & Maintenance.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-power"></span></span>
+              </div>
+              <div>
+                <h3>Easy Deployment</h3>
+                <p>Easy deployemnt of services and products with satisfied customers and businesses</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="feature-big">
+      <div class="container">
+        <div class="row mb-5 site-section">
+          <div class="col-lg-7" data-aos="fade-right">
+            <img src="images/undraw_gift_card_6ekc.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+            <h2 class="text-black">Communicate and gather feedback</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+            
+            <div class="author-box" data-aos="fade-left">
+              <div class="d-flex mb-4">
+                <div class="mr-3">
+                  <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="mr-auto text-black">
+                  <strong class="font-weight-bold mb-0">Grey Simpson</strong> <br>
+                  Co-Founder, XYZ Inc.
+                </div>
+              </div>
+              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?&rdquo;</blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 row mb-5 site-section ">
+          <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+            <img src="images/undraw_metrics_gtu7.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
+            <h2 class="text-black">Communicate and gather feedback</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam</p>
+            
+            
+
+            <div class="author-box" data-aos="fade-right">
+              <div class="d-flex mb-4">
+                <div class="mr-3">
+                  <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="mr-auto text-black">
+                  <strong class="font-weight-bold mb-0">Kimberly Gush</strong> <br>
+                  Co-Founder, XYZ Inc.
+                </div>
+              </div>
+              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?&rdquo;</blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5 site-section">
+          <div class="col-lg-7" data-aos="fade-right">
+            <img src="images/undraw_gift_card_6ekc.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+            <h2 class="text-black">Communicate and gather feedback</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+            
+            <div class="author-box" data-aos="fade-left">
+              <div class="d-flex mb-4">
+                <div class="mr-3">
+                  <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="mr-auto text-black">
+                  <strong class="font-weight-bold mb-0">Grey Simpson</strong> <br>
+                  Co-Founder, XYZ Inc.
+                </div>
+              </div>
+              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?&rdquo;</blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 row mb-5 site-section ">
+          <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+            <img src="images/undraw_metrics_gtu7.svg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
+            <h2 class="text-black">Communicate and gather feedback</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam</p>
+            
+            
+
+            <div class="author-box" data-aos="fade-right">
+              <div class="d-flex mb-4">
+                <div class="mr-3">
+                  <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="mr-auto text-black">
+                  <strong class="font-weight-bold mb-0">Kimberly Gush</strong> <br>
+                  Co-Founder, XYZ Inc.
+                </div>
+              </div>
+              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?&rdquo;</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="site-section bg-light" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">About Us</h2>
+            <p class="lead">Founded in 2020, Shikara Technologies is an Indian based Software Development Company located at Mysuru, the heritage city in Karnataka. 
+                We are a technology company to build a smart workspace and change the way the world thinks.
+              </p>
+
+          </div>
+
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="images/undraw_bookmarks_r6up.svg" alt="Image" class="img-fluid">
+          </div>
+          <!-- <div class="col-lg-5 ml-auto pl-lg-5">
+            <h2 class="text-black mb-4 h3 font-weight-bold">Our Mission</h2>
+            <p class="mb-4">Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.</p>
+            <ul class="ul-check mb-5 list-unstyled success">
+              <li>Laborum enim quasi at modi</li>
+              <li>Ad at tempore</li>
+              <li>Labore quaerat esse</li>
+            </ul>
+            <p><a href="#" class="btn btn-primary">Learn More</a></p>
+          </div> -->
+
+          <div class="col-lg-5 ml-auto pl-lg-5">
+              <h2 class="text-black mb-4 h3 font-weight-bold">Our Vision</h2>
+              <p class="mb-4">We believe that by our constant innovation and commitment we can deliver best quality services. With our well organised teamwork not only we aim to reach the highest peak but beyond that.</p>
+              
+
+              <h2 class="text-black mb-4 h3 font-weight-bold">Our Mission</h2>
+              <p class="mb-4">It is our goal to provide quality services and to develop softwares for our clients to face real-world challenges.We love to face new challenges in th industry and we solve the problem faced by our client.<br><br>It is our dedication that enables us to achieve our goals and become a better company for ourselves and our clients.</p>
+          
+          
+          
+            </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="site-section" id="our-team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center text-center"  data-aos="fade-up">
+          <div class="col-7 text-center  mb-5">
+            <h2 class="section-title">Our Team</h2>
+            <p class="lead">Our stacked team of engineers have experience in various domains of the Technology Industry</p>
+          </div>
+        </div>
+       
+        <div class="row justify-content-center text-center">
+
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="person">
+              <div class="bio-img">
+                <figure>
+                  <img src="images/temp.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+              <h2 class="text-black h1">Hemanth Aryan</h2>
+              <span class="sub-title d-block mb-3">Image Processing Specialist </span>
+              <p>An Image processing Researcher and Developer with 4 years experience in the Industry.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="person">
+              <div class="bio-img">
+                <figure>
+                  <img src="images/temp.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+              <h2 class="text-black h1">Tejasvi Sridhar</h2>
+              <span class="sub-title d-block mb-3">Natural Language processing Specialist</span>
+              <p>A Software Developer and Reearcher in the field of NLP with 4 years experience.Worked As full Stack Developer in the Industry.</p>
+              
+            </div>
+          </div>
+          
+
+
+          <!-- <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="person">
+              <div class="bio-img">
+                <figure>
+                  <img src="images/temp.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+              <h2 class="text-black h1">George Brook</h2>
+              <span class="sub-title d-block mb-3">Founder</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="person">
+              <div class="bio-img">
+                <figure>
+                  <img src="images/temp.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+              <h2 class="text-black h1">Emely Hopson</h2>
+              <span class="sub-title d-block mb-3">Marketing</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+              
+            </div>
+          </div> -->
+
+        </div>
+        <div class="row justify-content-center text-center">
+
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="person">
+              <div class="bio-img">
+                <figure>
+                  <img src="images/temp.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+              <h2 class="text-black h1">Abdul Rehman</h2>
+              <span class="sub-title d-block mb-3">Data Analytics Specialist</span>
+              <p>A Data Analytics Specialist with 6 years experience in building Business models. Also having 4 year experience in Full stack web development</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="person">
+              <div class="bio-img">
+                <figure>
+                  <img src="images/temp.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+              <h2 class="text-black h1">Ganesh Hegde</h2>
+              <span class="sub-title d-block mb-3">Full Stack Specialist</span>
+              <p>A Software Developer with great problem Solving skills and having 4 years experience in Full Stack and Software Development.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+<!-- 
+    <div class="site-section testimonial-wrap bg-light" id="testimonials-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Testimonials</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_3.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+              </figure>
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              <p class="text-black"><strong>John Smith</strong></p>
+
+              
+            </div>
+          </div>
+          <div>
+            <div class="testimonial">
+              
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_2.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+              </figure>
+
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              
+              <p class="text-black"><strong>Robert Aguilar</strong></p>
+              
+              
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+              </figure>
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              <p class="text-black"><strong>Roger Spears</strong></p>
+
+              
+            </div>
+           
+          </div>
+
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+              </figure>
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              <p class="text-black"><strong>Kyle McDonald</strong></p>
+
+              
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+
+    <div class="site-section" id="blog-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Blog Posts</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              <h2><a href="#">Make Your Business More Profitable</a></h2>
+              <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p><a href="#">Continue Reading...</a></p>
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              <h2><a href="#">Make Your Business More Profitable</a></h2>
+              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p><a href="#">Continue Reading...</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+              <h2><a href="#">Make Your Business More Profitable</a></h2>
+              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p><a href="#">Continue Reading...</a></p>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+    </div> -->
+
+    <div class="site-section bg-image2 overlay" id="contact-section" style="background-image: url('images/hero_1.jpg');">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3 text-white">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-7 mb-5">
+
+            
+
+            <form action="#" class="p-5 bg-white">
+              
+              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control rounded-0">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Leave your message here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+        
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="footer py-5 text-center">
+
+      <p class="mb-0">Email : shikaratechnologiesmysore@gmail.com         |                 Phone : +91  636 383 6692 ||  +91  973 110 6641          |           Location : Mysuru,India</p>
+      
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12">
+            <p class="mb-0">
+              <a href="#" class="p-3"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-3"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-3"><span class="icon-instagram"></span></a>
+              <a href="#" class="p-3"><span class="icon-linkedin"></span></a>
+              <a href="#" class="p-3"><span class="icon-pinterest"></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="mb-0">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  
+  <script src="js/main.js"></script>
+  
+  </body>
 </html>
